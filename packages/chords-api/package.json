@@ -3,5 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "author": "Jason Chung <shiningjason1989@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "deploy": "now --public"
+  },
+  "dependencies": {
+    "chord-chart": "^1.0.0",
+    "fs-extra": "^4.0.2",
+    "micro": "^9.0.1"
+  }
 }
