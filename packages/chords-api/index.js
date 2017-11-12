@@ -3,6 +3,7 @@ const url = require('url')
 
 const fs = require('fs-extra')
 const { send } = require('micro')
+const cors = require('micro-cors')
 
 const NOTES = 'C,C#,Db,D,D#,Eb,E,F,F#,Gb,G,G#,Ab,A,A#,Bb,B'.split(',')
 const CHORDS = '5,7,7#5,9,dim,m,m7,m7b5,m9,maj,maj7'.split(',')
@@ -11,10 +12,10 @@ const DOC_URL = 'https://github.com/shiningjason1989/chords'
 const ERR_NOT_FOUND = `Not Found: See ${DOC_URL} to find available endpoints.`
 const ERR_BAD_REQUEST = `Bad Request: See ${DOC_URL} to find expected params.`
 
-module.exports = async (req, res) => {
+const handler = async (req, res) => {
   const { query, pathname } = url.parse(req.url, true)
 
-  if (pathname !== '/') return send(res, 404, { error: ERR_NOT_FOUND })
+  if (pathname !== '/' || req.method !== 'GET') return send(res, 404, { error: ERR_NOT_FOUND })
   if (!query || !query.names) return send(res, 400, { error: ERR_BAD_REQUEST })
 
   const shapes = {}
@@ -37,3 +38,5 @@ module.exports = async (req, res) => {
 
   return shapes
 }
+
+module.exports = cors()(handler)

@@ -12,6 +12,7 @@
   "dependencies": {
     "chord-chart": "^1.0.0",
     "fs-extra": "^4.0.2",
-    "micro": "^9.0.1"
+    "micro": "^9.0.1",
+    "micro-cors": "^0.0.4"
   }
 }
