@@ -6,7 +6,7 @@ const { send } = require('micro')
 const cors = require('micro-cors')
 
 const NOTES = 'C,C#,Db,D,D#,Eb,E,F,F#,Gb,G,G#,Ab,A,A#,Bb,B'.split(',')
-const CHORDS = '5,7,7#5,9,dim,m,m7,m7b5,m9,maj,maj7'.split(',')
+const CHORDS = '5,7,7#5,7#9,9,dim,m,m7,m7b5,m9,maj,maj7,sus4'.split(',')
 const REG_EXP = new RegExp(`^(${NOTES.join('|')})(${CHORDS.join('|')})?$`)
 const DOC_URL = 'https://github.com/shiningjason1989/chords'
 const ERR_NOT_FOUND = `Not Found: See ${DOC_URL} to find available endpoints.`

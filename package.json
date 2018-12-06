@@ -1,6 +1,7 @@
 {
+  "name": "chords",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^2.5.1"
+    "lerna": "^3.5.1"
   }
 }
