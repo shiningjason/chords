@@ -1,4 +1,1 @@
-{
-  "name": "Em",
-  "shapes": [{ "fret": 0, "positions": ["0", "2", "2", "0", "0", "0"] }]
-}
+{"chord_charts": [{"positions": ["0", "2", "2", "0", "0", "0"], "fingers": ["0", "2", "3", "0", "0", "0"], "fret": 0}], "chord_name": "Em"}

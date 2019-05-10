@@ -1,4 +1,1 @@
-{
-  "name": "F#dim",
-  "shapes": [{ "fret": 2, "positions": ["1", "2", "3", "1", "x", "x"] }]
-}
+{"chord_charts": [{"positions": ["1", "2", "3", "1", "x", "x"], "fingers": ["1", "2", "3", "1", "0", "0"], "fret": 2}], "chord_name": "F#dim"}

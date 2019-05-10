@@ -1,4 +1,1 @@
-{
-  "name": "Adim",
-  "shapes": [{ "fret": 0, "positions": ["x", "0", "1", "2", "1", "x"] }]
-}
+{"chord_charts": [{"positions": ["x", "0", "1", "2", "1", "x"], "fingers": ["0", "0", "1", "3", "2", "0"], "fret": 0}], "chord_name": "Adim"}
