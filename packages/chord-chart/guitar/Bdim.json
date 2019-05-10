@@ -1,4 +1,1 @@
-{
-  "name": "Bdim",
-  "shapes": [{ "fret": 2, "positions": ["x", "1", "2", "3", "2", "x"] }]
-}
+{"chord_charts": [{"positions": ["x", "1", "2", "3", "2", "x"], "fingers": ["0", "1", "2", "4", "3", "0"], "fret": 2}], "chord_name": "Bdim"}
